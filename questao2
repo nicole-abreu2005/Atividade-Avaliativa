@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#define TAMANHO 50
+
+int main(void) {
+    int numeros[TAMANHO];
+    int i;
+
+
+    printf("Digite %d numeros inteiros:\n", TAMANHO);
+    for(i = 0; i < TAMANHO; i++) {
+        printf("Elemento %d: ", i + 1);
+        scanf("%d", &numeros[i]);
+    }
+
+
+    printf("\nElementos em ordem contrária:\n");
+    for(i = TAMANHO - 1; i >= 0; i--) {
+        printf("%d ", numeros[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}

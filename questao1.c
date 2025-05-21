@@ -10,6 +10,7 @@ int main() {
         printf("Digite a nota do aluno %d: ", i + 1);
         scanf("%f", &notas[i]);
         soma += notas[i];
+        
     }
 
     media = soma / 10;
